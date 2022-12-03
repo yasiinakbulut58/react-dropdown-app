@@ -1,14 +1,19 @@
 import { Route, Routes } from 'react-router-dom';
 
+import ThemeProvider from './store/ThemeProvider';
+
 import Home from './views/Home';
+import Layout from './views/Layout';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/">
-        <Route index element={<Home />} />
-      </Route>
-    </Routes>
+    <ThemeProvider>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+        </Route>
+      </Routes>
+    </ThemeProvider>
   );
 }
 
