@@ -2,7 +2,7 @@ import { createContext, useCallback, useContext, useEffect, useMemo } from 'reac
 
 import useLocalStorageState from '@/hooks/useLocalStorageState';
 
-const initialValue = 'dark';
+const initialValue = 'light';
 
 interface ThemeContextValue {
   theme: 'dark' | 'light';

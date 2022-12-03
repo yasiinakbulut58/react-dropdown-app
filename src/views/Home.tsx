@@ -1,12 +1,9 @@
+import Dropdown from '@/components/dropdown';
+
 import './Home.scoped.scss';
 
-function Hello() {
-  return (
-    <>
-      <h1>Home</h1>
-      <p>Welcome to your React app!</p>
-    </>
-  );
+function Home() {
+  return <Dropdown />;
 }
 
-export default Hello;
+export default Home;

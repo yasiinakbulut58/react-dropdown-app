@@ -4,6 +4,7 @@ body {
   --secondary-accent-color: #{$secondary-accent-color};
   --main-background-color: #{$main-background-color};
   --secondary-background-color: #{$secondary-background-color};
+  --table-even-color: #{$table-secondary-even-color};
 
   &.light {
     --main-color: #{$secondary-color};
@@ -11,6 +12,7 @@ body {
     --secondary-accent-color: #{$secondary-background-color};
     --main-background-color: #{$main-accent-color};
     --secondary-background-color: #{$secondary-accent-color};
+    --table-even-color: #{$table-even-color};
   }
 
   background-color: var(--main-background-color);
